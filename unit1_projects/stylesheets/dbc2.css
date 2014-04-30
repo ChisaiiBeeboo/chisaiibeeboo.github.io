@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  background: orange;
+  padding: 0 5%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  color: blue;
+}
+
+header {
+  background: #6699ff; 
+  border-color: #66ccff;
+}
+
+
+h1, h2 {
+  color: #fff;
+}
+
+nav {
+  background: #6666ff;
+}
+
+
+nav a, nav a:visited {
+  color: #fff
+}
+
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+body {
+  background-color: #fff;
+  color: #999
+}
+
+.image { 
+   position: relative; 
+   width: 100%; 
+}
+
+h2 { 
+   position: absolute; 
+   top: 425px; 
+   left: 20px; 
+   width: 100%; 
+}
+
