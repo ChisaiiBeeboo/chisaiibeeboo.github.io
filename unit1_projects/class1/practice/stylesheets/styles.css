@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #BC2F36;
+  color: orange;
 }
 
 h1 {
@@ -62,9 +62,9 @@ nav li a {
   padding: 5px 10px;
   text-decoration: none;
 }
-nav li a:hover {
+/*nav li a:hover {
   color: #FB000D;
-}
+}*/
 
 .jump {
   color: #565656;
@@ -103,9 +103,9 @@ header nav {
 header nav li {
   line-height: 75px;
 }
-header nav a:hover {
+/*header nav a:hover {
   background-color: #fff;
-}
+}*/
 
 header:after {
   /* clearfix hack */
