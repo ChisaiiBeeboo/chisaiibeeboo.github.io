@@ -5,6 +5,16 @@ header {
   color: white;
 }
 
+header li a {
+  color: white;
+  text-decoration: none;
+/*  padding-bottom: 50px;*/
+}
+
+header li a:hover {
+  color: orange;
+}
+
 h1 {
   font-size: 70px;
   color: orange;
@@ -14,16 +24,17 @@ img {
   border: 7px solid white;
   border-radius: 20px;
 }
-ul {
-  padding: 10px;
-  background: rgba(0,0,0,0.5);
+
+ul.a {
+  list-style: circle;
 }
+
 li {
-  display: inline;
+  display: block;
   padding: 0px 10px 0px 10px;
 }
 article {
-  max-width: 500px;
+  max-width: 100%;
   padding: 20px;
   margin: 0 auto;
 }
