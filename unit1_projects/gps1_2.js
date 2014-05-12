@@ -8,11 +8,12 @@ var client2 = {
     name: "Alladdin",
     age: 26,
     quote: "That's Abu!",
-    showQuote : function (){
-        console.log(client2.quote);
-    }
-    
     };
+    
+
+
+console.log(client);
+console.log(client2);
     
 var adamSandler = {
     name: "Adam Sandler",
@@ -22,6 +23,8 @@ var adamSandler = {
         console.log("WHAT A FUN TIME");
     }
 };
+
+adamSandler.funTimes
     
 var ClientMaker = function (name, age, quote) {
         this.name = name,
@@ -31,6 +34,8 @@ var ClientMaker = function (name, age, quote) {
       console.log("FUN!")
     }
 };
+
+
 
 
 var kristenBell = new ClientMaker("Kristen Bell", 33, "Do you wanna build a snowman?")
@@ -43,7 +48,7 @@ adamSandler.funStuff
 var sandlerAdams = new ClientMaker("Sandler Adams", 47, "That's your home! Are you too good for your home?!");
     
 var printClient = function (client) {
-        console.log("Client's name: " + client.name + "Age: " + client.age + client.quote);
+        console.log("Client's name: " + client.name + " Age: " + client.age + " famous quote is " + client.quote);
 };
 
 printClient(client2);

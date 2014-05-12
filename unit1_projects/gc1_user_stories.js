@@ -65,7 +65,7 @@ Pseudocode:
 		Ex: array = {1 3 5} median = 3
 
 // ______________________________________________________ //
-// Release 2, Person 3:
+// Release 2, Person 3: Kate La
 
 //////////// SUM ////////////////
 
