@@ -1,17 +1,54 @@
-oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
-evenLengthArray= [4, 4, 5, 5, 6, 6, 6, 7]
+############## => PAD ARRAY #################
+# class Array
+	# def pad(total, var=nil)
+	# 	(self << total.times.map{ var }).flatten
+	# end
 
-# SUM
-p oddLengthArray.inject(:+)
-p evenLengthArray.inject(:+)
+# 	def pad!(total, var=nil)
+# 		self.clone.pad
+# 	end
+# end
+
+# p [1,2,3].pad(5, 'apple')
+
+# p pad([1,2,3], 5)
+
+# p [1,2,3].pad_array(5)
+
+# arr = [1,2,3]
+
+# p (arr << 2.times.map{ 'apple' }).flatten
+
+#########################################################
 
 
-# MEAN
-p oddLengthArray.inject(:+).to_f/oddLengthArray.length
-p evenLengthArray.inject(:+).to_f/evenLengthArray.length
+i_want_pets = ["I", "want", 3, "pets", "but", "I", "only", "have", 2, ":(." ]
+my_family_pets_ages = {"Evi" => 6, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, 
+  "Annabelle" => 0, "Ditto" => 3}
 
-# MEDIAN
-# sorted = oddLengthArray.sort
-sorted = oddLengthArray.sort
-p ((sorted[(sorted.length-1)/2]) + (sorted[sorted.length/2]))/2.0
+# def my_array_modification_method(i_want_pets, 1) 
+# end
+
+# def my_hash_modification_method(my_family_pets_ages, 2) 
+# end
+
+
+# p i_want_pets[2] + 1
+
+# p i_want_pets.grep(\d)
+
+i_want_pets.each {|x| x.class == Fixnum {x + 1} }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
