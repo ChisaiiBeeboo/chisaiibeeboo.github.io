@@ -21,24 +21,29 @@
           <b>our_array = [ 3, "cat", true, [], {} ]</b>
           <br>
           <br>
-          An array is a list(or collection) of objects/data that is ordered by indexed-position. The index of the first object in an array is 0 because computers start counting from zero! You can access the objects of an array through it's position, for example our_array[1] would return "cat". Arrays can hold just about anything you throw at it integers, booleans, strings, hashes even other arrays. 
+          An array is a list(or collection) of objects/data that is ordered by indexed-position. Because computers always start count from zero indexing begins at 0 for the first position, 1 for the second position, 2 for the third position and well you get the idea... Indexing makes it simple to access the objects of an array through it's position, for example our_array[1] would return "cat". Arrays can hold just about anything you throw at it integers, booleans, strings, hashes even other arrays. 
         </p>
 
         <p>
-        <b>our_hash = { "cat" => 'meow', "dog" => 'woof' }</b>
+        <b>our_hash = { "Phone Number:" => '555-555-5555', "Address:" => '1 Elm St, San Jose, CA 95123' }</b>
         <br>
         <br>
-          Hashes store data in the form of key-value pairs, unlike arrays' indexed-position hashes are accessed through their keys. You're free to assign key and values to anything you like, for example 'color' => 'orange' or 'food' => 'chicken wings'
+          Hashes store data in the form of an unordered list made of key-value pairs, unlike arrays' indexed-positioning, hashes are accessed through their unique keys. You're free to assign the uniques key and values to anything you like, for example: <p>{'color' => 'orange'} or '{food' => 'chicken wings'}<p>
         }
         </p>
         <h3>What are they good for?</h3>
         <p>
-          
+          Hashes and Arrays are data containers you can use as a reference, for example: when you need to decipher a certain North Korean message.
         </p>
 
       <h3>How do you know which one to use?</h3>
         <p>
-          
+          If you need to store data in a particular order you should use arrays. Like the alphabet:
+
+          <p>["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]</p>
+
+           If you're storing data with unique keys, and varying values like a contact list for example you should use a hash.
+           <p> contacts = { 'moms' => 666-666-6666, 'dad' => 555-555-5555, 'pizza' => speed dial #1 } </p>
         </p>
       </article>
 
