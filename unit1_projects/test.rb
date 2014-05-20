@@ -107,8 +107,27 @@
 
 
 
+# class Die
+#   def initialize(sides)
+#  	raise ArgumentError, 'Wrong number' unless sides > 0
+#   	@sides = sides
 
-//p ('a'..'z').to_a
+#   end
+  
+#   def sides
+# 	@sides
+#   end
+  
+#   def roll
+#     rand(1..6)
+#   end
+# end
+
+
+# die = Die.new(3)
+# p die.sides # returns 3
+# p die.roll # returns a random number between 1 and 6
+# p die = Die.new(0) # Should throw ArgumentError 'Wrong number'
 
 
 
@@ -116,7 +135,84 @@
 
 
 
-class ARRAY
+
+# class Die
+#   def initialize(labels)
+#   	raise ArgumentError, 'No Empty Arrays' if labels[0] == nil
+#   	@sides = labels.length
+#   	@labels = labels
+#   end
+
+#   def sides
+#   	@sides
+#   end
+
+#   def roll
+#   	@labels.sample
+#   end
+# end
+
+
+# die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+# p die.sides # still returns the number of sides, in this case 6
+# p die.roll # returns one of ['A', 'B', 'C', 'D', 'E', 'F'], randomly
+# p die = Die.new([]) # should throw "No Empty Arrays" ArgumentError
+
+class GuessingGame
+	def initialize(answer)
+		@answer = answer
+	end
+
+	def guess(guess)
+		if guess > answer
+			:higher
+		elsif guess < answer
+			:lower
+		else
+			:correct
+		end
+	end
+
+	def solved?
+		if guess == :correct ? true : false
+	end
+
+end
+
+
+game = GuessingGame.new(10)
+
+game.solved?   # => false
+
+game.guess(5)  # => :low
+game.guess(20) # => :high
+game.solved?   # => false
+
+game.guess(10) # => :correct
+game.solved?   # => true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

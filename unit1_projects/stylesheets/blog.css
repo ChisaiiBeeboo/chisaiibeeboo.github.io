@@ -24,9 +24,10 @@ nav a {
   padding: 15px 10px;
 }
 
-/** Nav background on mobile devices**/
+/** Light Grey Background**/
 nav {
   background: #939393;
+  border-bottom-style: outset; 
 }
 /** Dark grey nav bar hover **/
 nav:hover {
@@ -72,7 +73,6 @@ header {
 header li a {
   color: white;
   text-decoration: none;
-/*  padding-bottom: 50px;*/
 }
 
 header li a:hover {
@@ -82,4 +82,42 @@ header li a:hover {
 h1 {
   font-style: italic;
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
+  font-weight: lighter;
+}
+.css3-gradient1{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+}
+/*==================================================
+ * Drop shadow effect with radial gradient
+ * ===============================================*/
+.css3-gradient1:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:100%;
+    bottom:0;
+    width:120%;
+    height:50px;
+    left:-10%;
+    right:-10%;
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.5), rgba(97, 97, 97, 0.0) 40%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.5), rgba(97, 97, 97, 0.0) 40%);
+}
+
+/******************************************************
+BODY
+******************************************************/
+
+article {
+  margin: 80px;
+}
+
+h2 {
+  color: orange;
+  font-weight: bold;
+}
+
+
