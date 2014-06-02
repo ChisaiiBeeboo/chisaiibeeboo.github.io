@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Kaitlyn La | Tech Blog</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css"/>
+    </head>
+    
+    <body>
+    <header>
+      <nav class="topbar">
+        <ul>
+          <li><a href="#" class="selected">Technically</a></li>
+          <li><a href="#">Culturally</a></li>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+      <h1>Technically...</h1>
+    </header>
+    <div class="box css3-gradient1">
+    <article>
+     <h2>Ruby Instance Variables</h2>
+       <p>
+         In Ruby everything is an object and every object belongs to a class. Each class has their own attributes which are stored in instance variables and behaviors defined by methods. Instance variables are instantiated in the class' initialize method.</p>
+         <pre> 
+          <code>
+              class Steakhouse_Review
+                def initialize(name, cut, rating)
+                  @name = name
+                  @cut = cut
+                  @rating = rating
+                end
+
+                def review
+                  p "#{@name}'s #{@cut} is #{@rating}."
+                end
+              end 
+
+               outback = Steakhouse_Review.new("Outback","T-Bone", "not so great")
+               peter_luger = Steakhouse_Review.new("Peter_Luger", "Porterhouse", "over-rated")
+               delmonico = Steakhouse_Review.new("Delmonico", "Ribeye", "delicious")
+
+               p outback.review # => "Outback's T-Bone is not so great."
+               p peter_luger.review # => "Peter_Luger's Porterhouse is over-rated."
+               p delmonico.review # => "Delmonico's Ribeye is delicious."
+          </code>
+         </pre>
+           <p> In our example we have the class Steakhouse_Review. Each time a new review(instance) of a steakhouse is generated it will contain the steakhouse name, the cut of steak and it's rating. Steakhouse_Review has one method which return that instances' attributes.  </p>
+    </article>
+    </div>
+    <footer>
+        <div id="footer" align="center">
+          <a href="https://twitter.com/KaitlynLa1"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+              <a href="https://www.facebook.com/kaitlyn.la"><img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+              <p>&copy; 2014 Kaitlyn La.</p>
+        </div>
+      </footer>
+    
+    </body>
+</html>
