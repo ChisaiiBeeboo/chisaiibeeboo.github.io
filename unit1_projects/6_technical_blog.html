@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Kaitlyn La | Tech Blog</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css"/>
+    </head>
+    
+    <body>
+    <header>
+      <nav class="topbar">
+        <ul>
+          <li><a href="#" class="selected">Technically</a></li>
+          <li><a href="#">Culturally</a></li>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+      <h1>Technically...</h1>
+    </header>
+    <div class="box css3-gradient1">
+    <article>
+      <h2>Blocs, Procs, and Lambdas</h2>
+          <p>A <b>bloc</b> is an anonymous block of code for example...</p>
+          <code> ["kazoozles", "orange gummies", "orange tictacs"].each { |yum| p "I heart " + yum + "!" }</code>
+          <pre>
+                    # =>"I heart kazoozles!"
+                    # =>"I heart orange gummies!"
+                    # =>"I heart orange tictacs!"
+          </pre>
+          <p> The bloc here would be the portion in between the curly braces <code><b>{</b> |yum| p "I heart " + yum + "!" <b>}</b></code> or you can also use the <b>do..end</b> syntax.</p>
+
+          <p> A <b>proc</b> is a bloc with a name, so you can re-use the code without having to rewrite the code each time. They're also objects unlike Blocs so they have all the functionality of an object.</p>
+          <pre>
+              <code>
+                    steaks = ["Ribeye", "T-Bone", "Porterhouse"]
+                    candies = ["kazoozles", "orange gummies", "orange tictacs"]
+
+                    yummies = Proc.new { |yum| p "I heart " + yum + "!" }
+
+                    p steaks.each(&yummies)
+                    # =>"I heart Ribeye!"
+                    # =>"I heart T-Bone!"
+                    # =>"I heart Porterhouse!"
+                    
+                    p candies.each(&yummies)
+                    # =>"I heart kazoozles!"
+                    # =>"I heart orange gummies!"
+                    # =>"I heart orange tictacs!"
+              </code>
+          </pre>
+          <p>A <b>lambda</b> is essentially a proc that behaves like a method. It'll check to see if you've passed the correct number of arguments, if for some reason you're short or extra an argument or two lambda will throw an error. Procs will go ahead and run your code regardless. Lambda's and procs also handle returns differently. For example...</p>
+          <pre>
+              def steak_proc
+                proc = Proc.new { return "I heart ribeyes" }
+                proc.call
+                "Procs do what they want"
+              end
+
+              p steak_proc # => I heart ribeyes
+
+              def steak_lambda
+                lambda = lambda { return "I heart ribeyes" }
+                lambda.call
+                "Lambdas do what I want"
+              end
+
+              puts steak_lambda # => Lambdas do what I want
+          </pre>
+          <p>From the example you can see proc returns itself and doesn't bother running the rest of steak_proc. A lambda in contrast will run itself and run the rest of steak_lambda method. </p>
+    </article>
+    </div>
+    <footer>
+        <div id="footer" align="center">
+          <a href="https://twitter.com/KaitlynLa1"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+              <a href="https://www.facebook.com/kaitlyn.la"><img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+              <p>&copy; 2014 Kaitlyn La.</p>
+        </div>
+      </footer>
+    
+    </body>
+</html>
